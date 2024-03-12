@@ -1,12 +1,10 @@
 from __future__ import unicode_literals
-from django.utils.encoding import python_2_unicode_compatible
 from django import template
 
 
 register = template.Library()
 
 
-@python_2_unicode_compatible
 class JavascriptContainer(object):
     """
     Content storage. Stores fragments of code in a list (self.nodes).
